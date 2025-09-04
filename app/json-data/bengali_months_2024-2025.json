@@ -1,0 +1,102 @@
+[
+  {
+    "monthName": "13, Magh (Maagh)",
+    "startingDate": "16/01/2024",
+    "EndingDate": "13/02/2024"
+  },
+  {
+    "monthName": "15, Falgun (Phalgun)",
+    "startingDate": "14/02/2024",
+    "EndingDate": "14/03/2024"
+  },
+  {
+    "monthName": "15, Boishakh (Baisakh)",
+    "startingDate": "14/04/2024",
+    "EndingDate": "14/05/2024"
+  },
+  {
+    "monthName": "13, Asharh (Aashar)",
+    "startingDate": "16/06/2024",
+    "EndingDate": "16/07/2024"
+  },
+  {
+    "monthName": "12, Srabon (Shraban)",
+    "startingDate": "17/07/2024",
+    "EndingDate": "16/08/2024"
+  },
+  {
+    "monthName": "12, Bhadro (Bhadra)",
+    "startingDate": "17/08/2024",
+    "EndingDate": "16/09/2024"
+  },
+  {
+    "monthName": "12, Ashshin (Aashin)",
+    "startingDate": "17/09/2024",
+    "EndingDate": "17/10/2024"
+  },
+  {
+    "monthName": "12, Ogrohaeon (Agrahan)",
+    "startingDate": "17/11/2024",
+    "EndingDate": "15/12/2024"
+  },
+  {
+    "monthName": "13, Poush",
+    "startingDate": "16/12/2024",
+    "EndingDate": "14/01/2025"
+  },
+  {
+    "monthName": "14, Magh (Maagh)",
+    "startingDate": "15/01/2025",
+    "EndingDate": "12/02/2025"
+  },
+  {
+    "monthName": "16, Falgun (Phalgun)",
+    "startingDate": "13/02/2025",
+    "EndingDate": "14/03/2025"
+  },
+  {
+    "monthName": "14, Choitro (Chaitra)",
+    "startingDate": "15/03/2025",
+    "EndingDate": "14/04/2025"
+  },
+  {
+    "monthName": "14, Boishakh (Baisakh)",
+    "startingDate": "15/04/2025",
+    "EndingDate": "14/05/2025"
+  },
+  {
+    "monthName": "14, Joishtho (Jaishtho)",
+    "startingDate": "15/05/2025",
+    "EndingDate": "15/06/2025"
+  },
+  {
+    "monthName": "13, Asharh (Aashar)",
+    "startingDate": "16/06/2025",
+    "EndingDate": "16/07/2025"
+  },
+  {
+    "monthName": "12, Srabon (Shraban)",
+    "startingDate": "17/07/2025",
+    "EndingDate": "17/08/2025"
+  },
+  {
+    "monthName": "11, Bhadro (Bhadra)",
+    "startingDate": "18/08/2025",
+    "EndingDate": "17/09/2025"
+  },
+  {
+    "monthName": "11, Ashshin (Aashin)",
+    "startingDate": "18/09/2025",
+    "EndingDate": "17/10/2025"
+  },
+  {
+    "monthName": "11, Kartik",
+    "startingDate": "18/10/2025",
+    "EndingDate": "16/11/2025"
+  },
+  {
+    "monthName": "12, Ogrohaeon (Agrahan)",
+    "startingDate": "17/11/2025",
+    "EndingDate": "16/12/2025"
+  }
+]

@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer-core'
 import dotenv from 'dotenv'
 import fs from 'fs';
 
-dotenv.config();
+dotenv.config({ path: "../.env.local" });
 
 const END_POINT = process.env.BRIGHT_DATA || '';
 
@@ -16,7 +16,7 @@ async function main2() {
 
       const page = await browser.newPage();
       page.setDefaultNavigationTimeout(2*60*1000);
-      await page.goto('https://www.prokerala.com/general/calendar/gujaraticalendar.php?year=1980&month=1&sb=1');
+      await page.goto(`https://www.drikpanchang.com/bengali/bengali-month-panjika.html?date=28/5/2020`);
       const body = await page.$('body');
 
       const html = await page.evaluate(() => document.documentElement.outerHTML);
@@ -73,13 +73,11 @@ function extractAmavasyaEvents() {
 
 async function main() {
     let browser;
-    console.log('Starting the scraping process...');
 
     try {
-        const endpoint = 'wss://brd-customer-hl_470e2004-zone-scraping_browser1:5t76olnbluaz@brd.superproxy.io:9222';
         console.log('Connecting to browser...');
         browser = await puppeteer.connect({
-            browserWSEndpoint: endpoint,
+            browserWSEndpoint: END_POINT,
         });
         console.log('✅ Connected!');
 
@@ -89,7 +87,8 @@ async function main() {
 
         for (let year = startYear; year <= endYear; year++) {
             for (let month = 1; month <= 12; month++) {
-                const url = `https://www.prokerala.com/general/calendar/gujaraticalendar.php?year=${year}&month=${month}&sb=1`;
+                // const url = `https://www.prokerala.com/general/calendar/gujaraticalendar.php?year=${year}&month=${month}&sb=1`;
+                const url = `https://www.drikpanchang.com/bengali/bengali-month-panjika.html?date=31/${month}/${year}`;
                 console.log(`Scraping: ${year}-${String(month).padStart(2, '0')}`);
                 
                 let page;
@@ -164,4 +163,4 @@ async function main() {
     }
 }
 
-main();
+main2();
