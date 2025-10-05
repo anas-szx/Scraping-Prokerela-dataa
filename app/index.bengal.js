@@ -4,7 +4,8 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: "../.env.local" });
 
-const END_POINT = process.env.BRIGHT_DATA || '';
+// const END_POINT = process.env.BRIGHT_DATA || '';
+const END_POINT = "wss://brd-customer-hl_5b9b36e1-zone-scraping_browser1:6s5cys084iu2@brd.superproxy.io:9222";
 
 function extractCalendarData() {
   const monthNameElement = document.querySelector('.dpPHeaderLeftTitle');
@@ -54,7 +55,7 @@ async function main() {
         }
 
         const startYear = 2011;
-        const endYear = 2023;
+        const endYear = 2025;
         const allScrapedData = [];
 
         let flag = false;
