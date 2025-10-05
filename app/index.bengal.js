@@ -43,7 +43,7 @@ async function main() {
     let browser;
 
     try {
-        console.log('Connecting to browser...');
+        console.log(`${END_POINT}\nConnecting to browser...`);
         browser = await puppeteer.connect({
             browserWSEndpoint: END_POINT,
         });
@@ -53,9 +53,11 @@ async function main() {
             fs.mkdirSync('json-data');
         }
 
-        const startYear = 2024;
-        const endYear = 2025;
+        const startYear = 2011;
+        const endYear = 2023;
         const allScrapedData = [];
+
+        let flag = false;
 
         for (let year = startYear; year <= endYear; year++) {
             for (let month = 1; month <= 12; month++) {
@@ -84,10 +86,13 @@ async function main() {
 
                 } catch (error) {
                     console.error(`❌ Could not scrape ${url}. Error: ${error.message}`);
+                    flag = true;
+                    break;
                 } finally {
                     if (page) await page.close();
                 }
             }
+            if (flag) break;
         }
 
         console.log(`\n✅ Scraping finished. Found data for ${allScrapedData.length} months.`);
